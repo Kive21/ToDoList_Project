@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/model/todo.dart'; // Import ToDo model class
 import 'package:todolist/widgets/todo_items.dart'; // Import ToDoItem widget
+import 'package:todolist/screens/help_screen.dart'; // Import HelpScreen
+
 // Enumeration to represent different task categories
 enum TaskCategory {
   all,
   completed,
   pending,
+}
+
+//Navigation logic for the help screen
+void _navigateToHelpScreen(BuildContext context) {
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => HelpScreen()),
+  );
 }
 
 class TasksScreen extends StatefulWidget {
@@ -192,6 +202,7 @@ class _TasksScreenState extends State<TasksScreen> {
             ListTile(
               title: Text("Help"),
               leading: Icon(Icons.help_center),
+              onTap: () => _navigateToHelpScreen(context),
             ),
             ListTile(
               title: Text("Logout"),
