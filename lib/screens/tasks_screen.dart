@@ -23,6 +23,7 @@ class _TasksScreenState extends State<TasksScreen> {
   @override
   void initState() {
     _updateTasks(); // Initialize tasks based on selected category
+    _foundToDo = todosList;
     super.initState();
   }
 
@@ -128,6 +129,19 @@ class _TasksScreenState extends State<TasksScreen> {
     Navigator.pop(context); // Close the drawer
   }
 
+  void _runFilter(String enteredKeyword){
+    List<ToDo> results = [];
+    if(enteredKeyword.isEmpty){
+      results = todosList;
+    }else{
+      results = todosList.where((item) => item.todoText.toLowerCase().contains(enteredKeyword.toLowerCase())).toList();
+    }
+
+    setState(() {
+      _foundToDo = results;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -199,7 +213,7 @@ class _TasksScreenState extends State<TasksScreen> {
               ),
               child: TextField(
                 onChanged: (keyword) {
-                  // Implement search functionality if needed
+                  _runFilter(keyword);
                 },
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(0),
