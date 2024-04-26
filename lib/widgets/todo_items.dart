@@ -36,6 +36,7 @@ class ToDoItem extends StatelessWidget {
         title: Text(
           todo.todoText,  // Display the task text
           style: TextStyle(
+            fontFamily: 'IndieFlower',
             fontSize: 16,
             color: Colors.brown,
             decoration: todo.isDone ? TextDecoration.lineThrough : null,  // Apply strikethrough decoration if task is completed
