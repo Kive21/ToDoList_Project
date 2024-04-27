@@ -32,7 +32,12 @@ dependencies:
   equatable: ^2.0.5
   flutter:
     sdk: flutter
+  table_calendar: ^3.0.3
+  sqflite: ^2.3.2
   flutter_bloc: ^8.1.5
+  syncfusion_flutter_calendar: ^25.1.41
+  mysql1: ^0.20.0
+  http: ^1.2.0
 
 dev_dependencies:
 

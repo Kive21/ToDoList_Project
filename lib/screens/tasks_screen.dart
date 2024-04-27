@@ -178,10 +178,10 @@ class _TasksScreenState extends State<TasksScreen> {
           children: [
             UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage("assets/profile.jpeg"),
+                backgroundImage: AssetImage("assets/plp.jpeg"),
               ),
-              accountName: Text("Student"),
-              accountEmail: Text("student@gmail.com"),
+              accountName: Text("Eric"),
+              accountEmail: Text("avwengae@gmail.com"),
             ),
             // Drawer menu items for different task categories
             ListTile(

@@ -10,9 +10,9 @@
             "port": 33060,
             "driver": "MySQL",
             "name": "MySQL Local",
-            "database": "todo_users",
+            "database": "todo_calender",
             "username": "root",
-            "password": "@Kive3621",
+            "password": "Kive3621",
             "connectionTimeout": 30
         }
     ]

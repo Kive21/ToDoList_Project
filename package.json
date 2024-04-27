@@ -1,0 +1,21 @@
+{
+  "name": "todolistfinal",
+  "version": "1.0.0",
+  "description": "TODO List Flutter Application\r This Flutter application is designed to manage tasks efficiently using three major folders that play key roles in building the user interface:",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}
